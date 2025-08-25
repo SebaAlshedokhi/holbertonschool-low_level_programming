@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description: Prints "with proper grammar, but the outcome is a piece of art,"
- *              using printf, followed by a new line.
+ *              using printf, followed by new line.
  *
  * Return: Always 0 (Success)
  */
