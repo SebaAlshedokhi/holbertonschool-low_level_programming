@@ -1,4 +1,8 @@
 #!/bin/bash
+/**
+ * main - printf
+ * Return: will return 0
+ */
 gcc -Wall clean.c -o clean
 #include <stdio.h>
 int main(void)
