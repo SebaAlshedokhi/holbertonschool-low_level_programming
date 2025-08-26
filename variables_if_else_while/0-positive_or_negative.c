@@ -1,6 +1,6 @@
 /**
 * main - positive or negative.
-* Description : This program will assign a random number to the variable n to print whether the number positive or negative.
+* Description : This program will teast a random number n to print whether the number positive or negative.
 Return: Always return 0 (Success)
 */
 #include<stdio.h>
@@ -12,13 +12,13 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n>0)
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
 	else
 	{
-		if (n<0)
+		if (n < 0)
 		{
 			printf("%d is negative\n", n);
 		}
