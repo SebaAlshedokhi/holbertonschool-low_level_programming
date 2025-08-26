@@ -8,21 +8,21 @@
 
 int main(void)
 {
-	int n = 0;
+	char n = 48;
 	char l = 'a';
 
-	while (n < 10)
+	while (n < 58)
 	{
-		printf("%d", n);
+		putchar(n);
 		n++;
 	}
 	while (l <= 'f')
 	{
-		printf("%c", l);
+		putchar(l);
 		l++;
 	}
 
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
