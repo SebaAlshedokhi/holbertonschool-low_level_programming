@@ -3,26 +3,21 @@
 * Descriptioni: A program that prints all the numbers of base 16 in lowercase.
 * Return: Always 0 (Success)
 */
-#include <stdio.h>
+
+#include<stdio.h>
 
 int main(void)
 {
-    int n = 48;  /* start from ASCII '0' */
+	int n = 48;
 
-    while (n <= 57)   /* loop until '9' */
-    {
-        putchar(n);   /* print the digit */
-
-        if (n != 57)  /* if not the last digit */
-        {
-            putchar(',');  /* print comma */
-            putchar(' ');  /* print space */
-        }
-
-        n++;  /* move to the next digit */
-    }
-
-    putchar('\n');  /* newline at the end */
-
-    return (0);
+	while (n <= 57 )
+	{
+		putchar(n);
+		if (n != 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
+	}
+	return (0);
 }
