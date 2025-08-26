@@ -2,7 +2,7 @@
 * main - positive or negative.
 * Description : This program will teast a random number n
 * to print whether the number positive or negative.
-Return: Always return 0 (Success)
+* Return: Always return 0 (Success)
 */
 #include<stdio.h>
 #include <time.h>
