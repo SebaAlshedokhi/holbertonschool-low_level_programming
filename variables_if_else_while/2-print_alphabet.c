@@ -9,7 +9,7 @@
 int main(void)
 {
 	char lower = 97;
-	while (lower <= 121)
+	while (lower <= 122)
 	{
 		putchar(lower);
 		lower++;
