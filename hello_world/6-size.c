@@ -1,10 +1,7 @@
 /**
- * function_name - Short description, single line
- * @parameterx: Description of parameter x
-(* a blank line
- * Description: Longer description of the function)?
-(* section header: Section description)*
- * Return: Description of the returned value
+ * main - size of types
+ * Description: Prints the size of various types on the computer it is compiled and run on.
+ * Return 0
  */
 #include<stdio.h>
 int main(void)
