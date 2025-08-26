@@ -8,12 +8,11 @@
 
 int main(void)
 {
-	char lower = 97;
-	while (lower <= 122)
-	{
-		putchar(lower);
-		lower++;
-	};
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	putchar(c);
+	putchar('\n');
+
 	return (0);
 }
-
