@@ -9,8 +9,8 @@
 #include<stdio.h>
 int main(void)
 {
-	printf("Size of a char: %u byte(s)\n",izeof(char));
-	printf("Size of a short: %u byte(s)\n",izeof(short));
+	printf("Size of a char: %u byte(s)\n",sizeof(char));
+	printf("Size of a short: %u byte(s)\n",sizeof(short));
 	printf("Size of a int: %u byte(s)\n",sizeof(int));
 	printf("Size of a double: %u byte(s)\n",sizeof(double));
 	printf("Size of a long: %u byte(s)\n",sizeof(long));
