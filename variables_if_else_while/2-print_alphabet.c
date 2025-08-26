@@ -9,16 +9,10 @@
 int main(void)
 {
 	char lower = 97;
-	char upper = 65;
-	while (lower <= 122)
+	while (lower <= 121)
 	{
 		putchar(lower);
 		lower++;
-	};
-	while (upper <= 90)
-	{
-		putchar(upper);
-		upper++;
 	};
 	return (0);
 }
