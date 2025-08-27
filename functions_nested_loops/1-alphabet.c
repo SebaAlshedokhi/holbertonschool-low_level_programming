@@ -1,5 +1,5 @@
 /**
-* main -  a program that prints the alphabet in lowercase.
+* function print_alphabet -  a program that prints the alphabet in lowercase.
 * Descriptioni: This program use putchar to print the alphabet in lower case
 * Return: Always 0 (Success)
 */
