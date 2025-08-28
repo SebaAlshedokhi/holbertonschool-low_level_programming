@@ -8,7 +8,8 @@
 #include"main.h"
 int print_last_digit(int c)
 {
-	int l;
-	l = _abs(c % 10);
-	return (l);
+	if (c >= 0)
+		return (c % 10);
+	else
+		return (-c % 10);
 }
