@@ -3,8 +3,7 @@
 * @c : int to checked
 * Description:  a function that checks for lowercase character,
 * print 1 if c is lowercase and 0 otherwise.
-* Return: 1 if c is lowercase
-* Return: 0 otherwise
+* Return: 1 if c is lowercase, int _islower(int c);0 otherwise
 */
 
 #include"main.h"
