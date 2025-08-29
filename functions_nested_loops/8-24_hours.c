@@ -4,29 +4,22 @@
 * of the day of Jack Bauer, starting from 00:00 to 23:59.
 */
 
-#include"main.h"
+#include "main.h"
+
 void jack_bauer(void)
 {
-	int H, h, M, m;
-	for (H = 0; H <= 2; H++)
+	int hour, minute;
+
+	for (hour = 0; hour < 24; hour++)
 	{
-		for (h = 0; h <= 3; h++)
+		for (minute = 0; minute < 60; minute++)
 		{
-			if ( !(H > 2) && !(h > 3))
-			{
-				for (M = 0; M <= 5; M++)
-				{
-					for (m = 0; m <= 9; m++)
-					{
-						_putchar(H + '0');
-						_putchar(h + '0');
-						_putchar(':');
-						_putchar(M + '0');
-						_putchar(m + '0');
-						_putchar('\n');
-					}
-				}
-			}
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
+			 _putchar('\n');
 		}
 	}
 }
