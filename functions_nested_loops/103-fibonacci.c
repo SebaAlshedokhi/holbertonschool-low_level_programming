@@ -5,7 +5,7 @@
  * Return: Always 0
  */
 
-#include<stoio.h>
+#include<stdio.h>
 int main(void)
 {
 	int first = 1;
