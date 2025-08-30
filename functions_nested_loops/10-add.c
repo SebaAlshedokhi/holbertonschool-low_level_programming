@@ -20,6 +20,6 @@ int add(int a, int b)
 	}
 	else
 		_putchar(result + '0');
-		_putchar('\n');
-		return(result);
+	_putchar('\n');
+	return(result);
 }
