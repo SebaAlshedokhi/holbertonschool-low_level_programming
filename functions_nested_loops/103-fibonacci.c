@@ -22,4 +22,5 @@ int fibo(void)
 		second = third;
 	} while (third <= 4000000);
 	printf("%d\n", sum);
+	return (0);
 }
