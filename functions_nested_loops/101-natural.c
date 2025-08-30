@@ -14,13 +14,13 @@ int main(void)
 	for (i = 0; i < 1024; i++)
 	{
 		if ((i % 3) == 0)
-			sum+ = i;
+			sum+= i;
 		else
 		{
 			if ((i % 5) == 0)
-			sum+ = i;
+			sum+= i;
 		}
 	}
-	print("The sum of the product of 3 and 5 is: %d", sum);
+	printf("The sum of the product of 3 and 5 is: %d", sum);
 	return (0);
 }
