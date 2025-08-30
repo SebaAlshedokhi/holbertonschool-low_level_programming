@@ -12,11 +12,11 @@ int main(void)
 	long int first = 1;
 	long int second = 2;
 
-	printf("%d, %d", first, second);
+	printf("%Id, %Id", first, second);
 	for (i = 3; i <= 50; i++)
 	{
 		third = first + second;
-		printf(", %d", third);
+		printf(", %Id", third);
 		first = second;
 		second = third;
 	}
