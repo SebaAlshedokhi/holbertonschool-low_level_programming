@@ -8,15 +8,16 @@
 #include<stdio.h>
 int main(void)
 {
-	long int i, third;
+	int i;
+	long int third;
 	long int first = 1;
 	long int second = 2;
 
-	printf("%Id, %Id", first, second);
+	printf("%ld, %ld", first, second);
 	for (i = 3; i <= 50; i++)
 	{
 		third = first + second;
-		printf(", %Id", third);
+		printf(", %ld", third);
 		first = second;
 		second = third;
 	}
