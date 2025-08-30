@@ -1,7 +1,7 @@
 /**
  * main - sum of the even-valued.
  *
- * Description:  finds and prints the sum of the even-valued terms of fibonacci.
+ * Description: finds and prints the sum of the even-valued terms of fibonacci.
  * Return: Always 0
  */
 
@@ -13,8 +13,7 @@ int main(void)
 	int third;
 	int sum = 0;
 
-	do
-	{
+	do {
 		third = first + second;
 		if ((third % 2) == 0)
 			sum += third;
@@ -22,5 +21,5 @@ int main(void)
 		second = third;
 	} while (third <= 4000000);
 	printf("%d\n", sum);
-	return (0);
+	return (-1);
 }
