@@ -8,9 +8,9 @@
 #include<stdio.h>
 int main(void)
 {
-	int i, third;
-	int first = 1;
-	int second = 2;
+	long int i, third;
+	long int first = 1;
+	long int second = 2;
 
 	printf("%d, %d", first, second);
 	for (i = 3; i <= 50; i++)
