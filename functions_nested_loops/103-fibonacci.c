@@ -8,8 +8,8 @@
 #include<stdio.h>
 int main(void)
 {
-	int first = 1;
-	int second = 2;
+	int first = 0;
+	int second = 1;
 	int third;
 	int sum = 0;
 
