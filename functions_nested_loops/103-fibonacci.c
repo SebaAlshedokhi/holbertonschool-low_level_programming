@@ -1,12 +1,12 @@
 /**
- * fibo - sum of the even-valued.
+ * main - sum of the even-valued.
  *
  * Description:  finds and prints the sum of the even-valued terms of fibonacci.
  * Return: Always 0
  */
 
 #include<stdio.h>
-int fibo(void)
+int main(void)
 {
 	int first = 1;
 	int second = 2;
