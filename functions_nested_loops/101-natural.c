@@ -21,6 +21,6 @@ int main(void)
 			sum+= i;
 		}
 	}
-	printf("The sum of the product of 3 and 5 is: %d", sum);
+	printf("%d", sum);
 	return (0);
 }
