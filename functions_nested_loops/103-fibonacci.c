@@ -21,5 +21,5 @@ int main(void)
 		second = third;
 	} while (third <= 4000000);
 	printf("%d\n", sum);
-	return (-1);
+	return (0);
 }
