@@ -18,8 +18,9 @@ int i, j;
 			{
 				if (i == j)
 				{
-					_putchar('\\');
+					_putchar('\');
 				}
+				_putchar('\n');
 			}
 		}
 	}
