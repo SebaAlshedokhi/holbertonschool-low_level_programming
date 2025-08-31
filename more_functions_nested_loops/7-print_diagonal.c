@@ -18,10 +18,14 @@ int i, j;
 			{
 				if (i == j)
 				{
-					_putchar('\');
+					_putchar('\\');
 				}
-				_putchar('\n');
+				else
+				{
+					_putchar(' ');
+				}
 			}
+			_putchar('\n');
 		}
 	}
 	_putchar('\n');
