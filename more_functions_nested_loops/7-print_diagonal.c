@@ -22,6 +22,7 @@ int i, j;
 				}
 				else
 				{
+					if (i > j)
 					_putchar(' ');
 				}
 			}
