@@ -29,4 +29,8 @@ int i, j;
 			_putchar('\n');
 		}
 	}
+	else
+	{
+		_putchar('\n');
+	}
 }
