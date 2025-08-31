@@ -1,5 +1,5 @@
 /**
-* _isupper - checks for uppercase character.
+* _isdigit - checks for uppercase character.
 * @c: to compare.
 * Description: a function that checks for uppercase character.
 * Return: 1 if c is uppercase and 0 otherwise.
