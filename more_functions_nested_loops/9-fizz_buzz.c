@@ -2,11 +2,11 @@
 * main - Fizz-Buzz test
 *
 * Description: prints the numbers from 1 to 100, Fizz and Buzz.
-*
+* Return: Always 0
 */
 
 #include<stdio.h>
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -24,4 +24,5 @@ void main(void)
 					printf("%d ",i);
 	}
 	printf("\n");
+	return (0);
 }
