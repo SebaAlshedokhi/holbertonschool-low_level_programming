@@ -1,5 +1,5 @@
 /**
-* 6-print_line - draws a straight line.
+* print_line - draws a straight line.
 * @n : long of the line.
 * Description:  a function that draws a straight line in the terminal.
 *
