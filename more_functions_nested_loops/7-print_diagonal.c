@@ -29,5 +29,4 @@ int i, j;
 			_putchar('\n');
 		}
 	}
-	_putchar('\n');
 }
