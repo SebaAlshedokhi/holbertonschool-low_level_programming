@@ -1,6 +1,6 @@
 /**
 * _strlen - returns the length.
-* @*s: pointer
+* @s: pointer
 * Description: a function that returns the length of a string.
 * Return: length.
 */
