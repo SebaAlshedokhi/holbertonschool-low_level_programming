@@ -7,20 +7,19 @@
 #include"main.h"
 void rev_string(char *s)
 {
-	int i;
+	int i = 0;
 	int j;
 	int length = 0;
 
 	for (i=0 ; s[i] != '\0'; i++)
 	length++;
-	char c[length];
-
-	for (i = 0; i <= length; i++)
+	j = length - 1;
+	i = 0;
+	while ( i < j )
 	{
-	c[i] = s[i];
+		swp = s[i];
+		s[i] = s[j];
+		s[j] = swp;
+		i++;
+		j--;
 	}
-
-	for (i = 0; i < length; i++)
-		for (j = (length - 1); j = 0; j--)
-			s[i] = c[j];
-}
