@@ -8,7 +8,7 @@
 #include"main.h"
 void swap_int(int *a, int *b)
 {
-	int *c = -1;
+	int *c = o;
 	*c = *a;
 	*a = *b;
 	*b = *c;
