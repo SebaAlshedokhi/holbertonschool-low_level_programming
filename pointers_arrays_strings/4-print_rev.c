@@ -1,6 +1,6 @@
 /**
 * print_rev - prints a string.
-* @*s: pointer
+* @s: pointer
 * Description: a function that prints a string, in reverse.
 */
 
