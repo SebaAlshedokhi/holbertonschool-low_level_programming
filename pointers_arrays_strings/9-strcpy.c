@@ -11,14 +11,9 @@
 #include"main.h"
 char *_strcpy(char *dest, char *src)
 {
-	int i;
-	int flength = 1;
+	int i = 0;
 
-	for (i = 0 ; src[i] != '\0'; i++)
-	flength++;
-
-	for (i = 0; i <= flength; i++)
-	dest[i] = src[i];
-
+	while ((dest[i] = src[i]) != '\0';
+	i++;
 	return (dest);
 }
