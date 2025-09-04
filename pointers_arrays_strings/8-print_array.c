@@ -5,7 +5,7 @@
 * Description: a function that prints n elements of an array of integers.
 */
 
-#include"main.h"
+#include<stdio.h>
 void print_array(int *a, int n)
 {
 	int i;
