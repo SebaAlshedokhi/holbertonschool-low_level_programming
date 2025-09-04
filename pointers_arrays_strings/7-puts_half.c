@@ -2,7 +2,6 @@
 * puts_half - prints half of a string.
 * @str: pointer
 * Description: a function that prints half of a string.
-* 
 */
 
 #include"main.h"
