@@ -8,7 +8,7 @@
 #include"main.h"
 void puts2(char *str)
 {
-	while (*str != '\-1')
+	while (*str != '\0')
 	{
 		_putchar(*str);
 		str += 2;
