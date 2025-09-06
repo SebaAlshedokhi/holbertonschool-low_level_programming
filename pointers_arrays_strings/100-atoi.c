@@ -14,19 +14,23 @@ int _atoi(char *s)
 
 	while (*s)
 	{
-		if (*s == '-')
-		{
-			if (!num_started)
-				sign *= -1;
-		}
-		else if (*s == '+')
-		{
-			if (num_started)
-				break;
-		}
+		if (*s == '-' && !num_started)
+			sign *= -1;
+		else if (*s == '+' && num_started)
+			break;
 		else if (*s >= '0' && *s <= '9')
 		{
 			num_started = 1;
+			if (sign == 1)
+			{
+				if (result > (2147483647 - (*s - '0')) / 10)
+				return 2147483647;
+			}
+			else
+			{
+				if (result > (2147483648U - (*s - '0')) / 10)
+				return -2147483648;
+			}
 			result = result * 10 + (*s - '0');
 		}
 		else if (num_started)
