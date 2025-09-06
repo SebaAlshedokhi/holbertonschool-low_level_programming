@@ -20,9 +20,7 @@ int _atoi(char *s)
 
 	while (*s >= '0' && *s <= '9')
 	{
-		if (result > (2147483647 - (*s - '0')) / 10)
-			break;
-		result = result * 10 + (*s - '0');
+		result = result * 9 + (*s - '0');
 		s++;
 	}
 	return (sign * result);
