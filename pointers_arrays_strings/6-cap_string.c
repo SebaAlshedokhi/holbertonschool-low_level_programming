@@ -13,7 +13,10 @@ char *cap_string(char *str)
 	
 	while (*str != '\0')
 	{
-		if (*str == ' ' || *str == '\t' || *str == '\n' || *str == ',' || *str == ';' || *str == '.' || *str == '!' || *str == '?' || *str == '"' || *str == '(' || *str == ')' || *str == '{' || *str == '}')
+		if (*str == ' ' || *str == '\t' || *str == '\n' || *str == ',' ||
+			       	*str == ';' || *str == '.' || *str == '!' || *str == '?' ||
+			       	*str == '"' || *str == '(' || *str == ')' || *str == '{' ||
+			       	*str == '}')
 			new_word = 1;
 		else if (new_word && (*str >= 'a' && *str <= 'z'))
 		{
