@@ -1,5 +1,5 @@
 /**
-* _strncmp - compares two strings.
+* _strcmp - compares two strings.
 * @s1: pointer
 * @s2: pointer
 * Description: a function that compares two strings.
