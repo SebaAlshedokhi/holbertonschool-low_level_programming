@@ -5,23 +5,34 @@
 * Return: integer number.
 */
 
-#include"main.h"
+#include "main.h"
 int _atoi(char *s)
 {
 	int sign = 1;
 	int result = 0;
+	int num_started = 0;
 
-	while (*s && (*s < '0' || *s > '9'))
+	while (*s)
 	{
 		if (*s == '-')
-		sign *= -1; 
-		s++;
-	}
-
-	while (*s >= '0' && *s <= '9')
-	{
-		result = result * 9 + (*s - '0');
+		{
+			if (!num_started)
+				sign *= -1;
+		}
+		else if (*s == '+')
+		{
+			if (num_started)
+				break;
+		}
+		else if (*s >= '0' && *s <= '9')
+		{
+			num_started = 1;
+			result = result * 10 + (*s - '0');
+		}
+		else if (num_started)
+		break;
 		s++;
 	}
 	return (sign * result);
 }
+
