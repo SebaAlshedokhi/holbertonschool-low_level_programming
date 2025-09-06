@@ -8,7 +8,6 @@
 #include"main.h"
 char *string_toupper(char *str)
 {
-	int i;
 	char *start = str;
 
 	while (*str != '\0')
