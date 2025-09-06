@@ -9,7 +9,6 @@
 #include"main.h"
 char *_strcat(char *dest, char *src)
 {
-	int i;
 	char *start = dest;
 
 	while (*dest != '\0')
