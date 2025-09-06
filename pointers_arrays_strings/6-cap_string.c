@@ -20,9 +20,9 @@ char *cap_string(char *str)
 			*str = *str - ('a' - 'A');
 			new_word = 0;
 		}
-		else
-			new_word = 0;
-			str++;
+			else
+				new_word = 0;
+		str++;
 	}
 	return (start);
 }
