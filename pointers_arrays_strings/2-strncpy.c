@@ -1,5 +1,5 @@
 /**
-* *_strncpo - copies a strings.
+* *_strncpy - copies a strings.
 * @dest: pointer
 * @src: pointer
 * @n: integer
