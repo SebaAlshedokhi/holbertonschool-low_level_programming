@@ -1,5 +1,5 @@
 /**
-* _strcpy - convert a string to an integer.
+* _atoi - convert a string to an integer.
 * @s: pointer
 * Description: a function that convert a string to an integer.
 * Return: integer number.
@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int sign = 1;
 	int result = 0;
 	int num_started = 0;
-
+	
 	while (*s)
 	{
 		if (*s == '-' && !num_started)
@@ -21,22 +21,16 @@ int _atoi(char *s)
 		else if (*s >= '0' && *s <= '9')
 		{
 			num_started = 1;
-			if (sign == 1)
-			{
-				if (result > (2147483647 - (*s - '0')) / 10)
-				return 2147483647;
-			}
-			else
-			{
-				if (result > (2147483648U - (*s - '0')) / 10)
-				return -2147483648;
-			}
-			result = result * 10 + (*s - '0');
+			int digit = *s - '0';
+			if (sign == 1 && result > (2147483647 - digit) / 10)
+				return (214748364)7;
+			if (sign == -1 && result > (2147483647 - digit + 1) / 10)
+				return (-2147483648);
+			result = result * 10 + digit;
 		}
 		else if (num_started)
-		break;
+			break;
 		s++;
 	}
-	return (sign * result);
+	return sign * result;
 }
-
