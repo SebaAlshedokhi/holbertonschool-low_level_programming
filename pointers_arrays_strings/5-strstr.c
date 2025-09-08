@@ -25,7 +25,7 @@ char *_strstr(char *haystack, char *needle)
 			needle++;
 			haystack++;
 		}
-		if (*needle == \'0')
+		if (*needle == '\0')
 			return (loc);
 
 		needle = start;
