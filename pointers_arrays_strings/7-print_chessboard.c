@@ -1,6 +1,6 @@
 /**
 * print_chessboard - prints the chessboard.
-* @a[8]: 2D array
+* @a: 2D array
 * Description: a function that prints the chessboard.
 */
 
