@@ -30,6 +30,6 @@ char *_strstr(char *haystack, char *needle)
 
 		needle = start;
 		haystack = loc + 1;
-	} 
+	}
 	return (NULL);
 }
