@@ -10,7 +10,7 @@
 #include"main.h"
 void print_diagsums(int *a, int size)
 {
-	int i, j;
+	int i;
 	int sum1 = 0;
 	int sum2 = 0;
 
