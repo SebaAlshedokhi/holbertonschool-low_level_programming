@@ -29,5 +29,5 @@ int prime_helper(int n, int divisor)
 		return (1);
 	if (n % divisor == 0)
 		return (0);
-	return prime_helper(n, divisor + 1);
+	return (prime_helper(n, divisor + 1));
 }
