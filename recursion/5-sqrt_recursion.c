@@ -8,7 +8,7 @@
 #include"main.h"
 int _sqrt_recursion(int n)
 {
-	int x;
+	int x = 0;
 
 	if (n < 0 || x * x > n)
 		return (-1);
