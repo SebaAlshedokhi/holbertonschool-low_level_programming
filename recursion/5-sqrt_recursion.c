@@ -8,12 +8,11 @@
 #include"main.h"
 int _sqrt_recursion(int n)
 {
-int sqrt;
+	int x;
 
-if (n < 0)
-return (-1);
-
-
-سكيييييييييييييييب
-فكري زين وأكثر
+	if (n < 0 || x * x > n)
+		return (-1);
+	if (x * x == n)
+		return (x);
+	_sqrt_recursion(x + 1);
 }
