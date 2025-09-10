@@ -1,10 +1,3 @@
-/**
-* _sqrt_helper - helper function.
-* @n: number
-* @x: number
-* Description: a function that help recursion.
-* Return: square root.
-*/
 int _sqrt_helper(int n, int x);
 /**
 * _sqrt_recursion - returns the natural square root of a number.
@@ -19,7 +12,13 @@ int _sqrt_recursion(int n)
 		return (-1);
 	return (_sqrt_helper(n, 0));
 }
-
+/**
+* _sqrt_helper - helper function.
+* @n: number
+* @x: number
+* Description: a function that help recursion.
+* Return: square root.
+*/
 int _sqrt_helper(int n, int x)
 {
 	if ((x * x) == n)
