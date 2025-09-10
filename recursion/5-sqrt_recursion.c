@@ -5,6 +5,8 @@
 * Return: square root.
 */
 
+int _sqrt_helper(int n, int x);
+
 #include"main.h"
 int _sqrt_recursion(int n)
 {
