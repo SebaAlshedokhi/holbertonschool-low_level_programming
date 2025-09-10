@@ -1,4 +1,4 @@
-int _prime_helper(int n, int divisor, int limit);
+int prime_helper(int n, int divisor, int limit);
 int _sqrt_recursion(int n);
 
 /**
@@ -13,7 +13,7 @@ int is_prime_number(int n)
 {
 	if (n <= 1)
 		return (0);
-	return (prime_helper(int n, 2, _sqrt_recursion(n)));
+	return (prime_helper(n, 2, _sqrt_recursion(n)));
 }
 
 /**
