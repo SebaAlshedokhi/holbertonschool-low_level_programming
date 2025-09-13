@@ -1,8 +1,10 @@
 /**
- * main - prints all arguments
- * Description: a program that prints all arguments it receives.
- * Return: Always 0
- */
+* main - prints all arguments
+* Description: a program that prints all arguments it receives
+* @argc: count
+* @argv: vector
+* Return: Always 0
+*/
 
 #include<stdio.h>
 int main(int argc, char *argv[])
