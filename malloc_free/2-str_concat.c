@@ -10,30 +10,38 @@
 #include<stdio.h>
 char *str_concat(char *s1, char *s2)
 {
-	char *conc;
-	char *start;
+	char *conc, *start1, *start2;
+	int i, length1, length2;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	conc = malloc(strlen(s1) + strlen(s2) + 1);
-	if (conc == NULL)
-		return (NULL);
-	start = conc;
+	start1 = s1;
+	start2 = s2;
 	while (*s1 != '\0')
 	{
-		*conc = *s1;
+		length1++;
 		s1++;
-		conc++;
 	}
 	while (*s2 != '\0')
 	{
-		*conc = *s2;
+		length2++;
 		s2++;
-		conc++;
 	}
-	*conc = '\0';
-	conc = start;
+	s1 = start1;
+	s2 = start2;
+	conc = malloc(length1 + length2 + 1);
+	if (conc == NULL)
+		return (NULL);
+	for (i = 0; i < length1; i++)
+	{
+		conc[i] = s1[i];
+	}
+	for (i = length1; i < length2 ; i++)
+	{
+		conc[i + length1] = s2[i];
+	}
+	conc[length1 + length2] = '\0';
 	return (conc);
 }
