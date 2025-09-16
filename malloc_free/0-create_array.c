@@ -12,7 +12,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ptr;
-	char *start;
+	int i;
 
 	if (size == 0)
 		return (NULL);
@@ -20,11 +20,9 @@ char *create_array(unsigned int size, char c)
 	if (ptr == NULL)
 		return (NULL);
 	start = ptr;
-	while (*ptr != '\0')
+	for (i = 0; i < size; i++)
 	{
-		*ptr = c;
-		ptr++;
+		ptr[i] = c;
 	}
-	ptr = start;
 	return (ptr);
 }
