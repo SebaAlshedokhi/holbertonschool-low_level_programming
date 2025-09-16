@@ -5,20 +5,27 @@
 * Return: pointer or NULL
 */
 
-#include<string.h>
 #include<stdlib.h>
 #include<stdio.h>
 char *_strdup(char *str)
 {
 	char *strcp;
-	char *start;
+	char *start1, *start2;
+	int length = 0;
 
 	if (str == NULL)
 		return (NULL);
-	strcp = malloc(strlen(str) + 1);
+	start1 = str;
+	while (*str != '\0')
+	{
+		length++;
+		str++;
+	}
+	str = start1;
+	strcp = malloc(length + 1);
 	if (strcp == NULL)
 		return (NULL);
-	start = strcp;
+	start2 = strcp;
 	while (*str != '\0')
 	{
 		*strcp = *str;
@@ -26,6 +33,6 @@ char *_strdup(char *str)
 		strcp++;
 	}
 	*strcp = '\0';
-	strcp = start;
+	strcp = start2;
 	return (strcp);
 }
