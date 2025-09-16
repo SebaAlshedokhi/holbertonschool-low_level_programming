@@ -5,6 +5,7 @@
 * Return: pointer or NULL
 */
 
+#include<string.h>
 #include<stdlib.h>
 #include<stdio.h>
 char *_strdup(char *str)
