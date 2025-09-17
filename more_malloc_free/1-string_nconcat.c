@@ -1,15 +1,15 @@
 /**
- * *string_nconcat - concatenates two strings
- * @s1: pointer
- * @s2: pointer
- * @n: size
- * Description: a function that concatenates two strings.
- * Return: pointer
- */
+* *string_nconcat - concatenates two strings
+* @s1: pointer
+* @s2: pointer
+* @n: size
+* Description: a function that concatenates two strings.
+* Return: pointer
+*/
 
- #include<stdio.h>
- #include<stdlib.h>
- char *string_nconcat(char *s1, char *s2, unsigned int n)
+#include<stdio.h>
+#include<stdlib.h>
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *conc, *start1, *start2;
 	unsigned int i, length1 = 0, length2 = 0;
