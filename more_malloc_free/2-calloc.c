@@ -3,6 +3,7 @@
  * @nmemb: number
  * @size: size
  * Description: a function that allocates memory for an array, using malloc.
+ * Return: pointer
  */
 
 #include<stdio.h>
