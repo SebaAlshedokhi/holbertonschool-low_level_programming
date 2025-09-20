@@ -1,3 +1,4 @@
+#include"dog.h"
 /**
  * init_god - initialize a variable
  * @struct dog: structure
@@ -6,7 +7,6 @@
  * @owner: pointer
  * Description: a function that initialize a variable of type struct dog
  */
-#include"dog.h"
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d)
