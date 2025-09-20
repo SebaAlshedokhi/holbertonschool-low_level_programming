@@ -1,5 +1,5 @@
 /**
- * init_god -  initialize a variable 
+ * init_god - initialize a variable
  * @struct dog: structure
  * @name: pointer
  * @age: number
