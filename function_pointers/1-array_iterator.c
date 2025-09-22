@@ -6,6 +6,7 @@
  * Description: a function that executes a function given as a paramete
  */
 
+#include <stddef.h>
 #include"function_pointers.h"
 #include<stdio.h>
 void array_iterator(int *array, size_t size, void (*action)(int))
@@ -14,5 +15,5 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	if (array == NULL || action == NULL)
 		return;
 	for (i = 0; i < size; i++)
-		action(array[i]0;
+		action(array[i]);
 }
