@@ -5,6 +5,8 @@
  * to perform the operation asked by the user.
  * Return: pointer to function
  */
+#include<stdio.h>
+#include"3-calc.h"
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
