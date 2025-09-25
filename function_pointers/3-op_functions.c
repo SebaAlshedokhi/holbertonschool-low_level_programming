@@ -6,14 +6,11 @@
  * @a: first integer
  * @b: second integer
  * Description: a function to calculates the sum
- * Return: sum
+ * Return: the sum
  */
 int op_add(int a, int b)
 {
-	int result;
-
-	result = a + b;
-	return (result);
+	return (a + b);
 }
 
 /**
@@ -21,14 +18,11 @@ int op_add(int a, int b)
  * @a: first integer
  * @b: second integer
  * Description: a function to calculates the difference 
- * Return: difference 
+ * Return: the difference 
  */
 int op_sub(int a, int b)
 {
-	int result;
-
-	result = a - b;
-	return (result);
+	return (a - b);
 }
 
 /**
@@ -36,14 +30,11 @@ int op_sub(int a, int b)
  * @a: first integer
  * @b: second integer
  * Description: a function to calculates the product
- * Return: product
+ * Return: the product
  */
 int op_mul(int a, int b)
 {
-	int result;
-
-	result = a * b;
-	return (result);
+	return (a * b);
 }
 
 /**
@@ -51,14 +42,11 @@ int op_mul(int a, int b)
  * @a: first integer
  * @b: second integer
  * Description: a function to calculates the division
- * Return: division
+ * Return: the quotient
  */
 int op_div(int a, int b)
 {
-	int result;
-	
-	result = a / b;
-	return (result);
+	return (a / b);
 }
 
 /**
@@ -70,8 +58,5 @@ int op_div(int a, int b)
  */
 int op_mod(int a, int b)
 {
-	int result;
-
-	result = a % b;
-	return (result);
+	return (a % b);
 }

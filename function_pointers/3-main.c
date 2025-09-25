@@ -1,6 +1,6 @@
 /**
  * main - program
- * @argc: count
+ * @argc: number of argv
  * @argv: string
  * Description: a program that performs simple operations.
  * Return: Always 0
@@ -10,9 +10,8 @@
 #include<stdlib.h>
 int main(int argc, char *argv[])
 {
-	int a, b, result;
-	char *operator;
-	int (*func)(int, int);
+	int a, b;
+	int (*op_func)(int, int);
 
 	if (argc != 4)
 	{
@@ -22,18 +21,17 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	operator = argv[2];
 	b = atoi(argv[3]);
-	func = get_op_func(operator);
-	if (func == NULL)
+	op_func = get_op_func(argv[2]);
+	if (!op_func)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*operator == '/' || *operator == '%') && b == 0)
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && !b)
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	result = func(a, b);
-	printf("%d\n", result);
+	printf("%d\n", op_func(a ,b));
 	return (0);
 }
