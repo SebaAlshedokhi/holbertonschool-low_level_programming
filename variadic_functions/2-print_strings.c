@@ -3,9 +3,9 @@
 #include<stdio.h>
 /**
 * print_strings - prints strings with seperator
-* @seperator: the seperator
+* @separator: the separator
 * @n: the number of arguments
-* Description: a function that prints strings with seperator
+* Description: a function that prints strings with separator
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
