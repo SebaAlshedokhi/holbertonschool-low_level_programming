@@ -8,7 +8,7 @@
 * @...: the strings to sum
 * Description: a function that prints strings with seperator
 */
-void print_strings(const char *seperator, const unsignes int n, ...)
+void print_strings(const char *seperator, const unsigned int n, ...)
 {
 	int i = n;
 	char *str;
