@@ -2,7 +2,7 @@
 /**
  * list_len - returns the number of elements
  * @h: list
- * Description: a function that returns the number of elements in a list_t list.
+ * Description: a function that returns the number of elements.
  * Return: the number of nodes
  */
 
