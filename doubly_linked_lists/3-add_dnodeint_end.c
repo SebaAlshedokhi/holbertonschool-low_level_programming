@@ -2,7 +2,7 @@
 /**
 * add_dnodeint_end - adds a new node at the end
 * @head: head
-* @str: char
+* @n: int
 * Description: a function that adds a new node at the end
 * Return: the address of the new element, or NULL if it failed
 */
