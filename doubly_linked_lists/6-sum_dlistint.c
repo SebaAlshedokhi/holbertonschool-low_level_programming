@@ -1,8 +1,7 @@
 #include"lists.h"
 /**
-* get_dnodeint_at_index - returns the sum of n's
+* sum_dlistint - returns the sum of n's
 * @head: head
-* @index: index
 * Description: a function that returns the sum of n's
 * Return: returns the sum or 0
 */
